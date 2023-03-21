@@ -1,0 +1,54 @@
+{
+  "about": {
+    "details": {
+      "name": "Klara Bryntesson",
+      "email": "k_bryntesson@hotmail.com",
+      "github": "KlaraBryntesson.github.blabla",
+      "githubpages": "blablabla",
+      "image": "URL"
+    },
+    "description": "Lång text.. bla blabla"
+  },
+  "work": [
+    {
+      "id": "fomobor",
+      "name": "Fomo Bar",
+      "description": "blabla",
+      "languages": ["HTML", "CSS"],
+      "participants": "nej"
+    },
+    {
+      "id": "beerlibrary",
+      "name": "Beer Library",
+      "description": "blabla",
+      "languages": ["HTML", "CSS", "Native Javascript"],
+      "participants": []
+    },
+    {
+      "id": "gameofthrones",
+      "name": "Game Of Thrones",
+      "description": "blabla",
+      "languages": ["HTML", "CSS", "Javascript", "Vue", "VITE"],
+      "participants": []
+    },
+    {
+      "id": "urbangreens",
+      "name": "Urban Greens",
+      "description": "blabla",
+      "languages": ["HTML", "CSS", "Javascript", "Vue", "VITE"],
+      "participants": [
+        "Ellinor Sahberg",
+        "Isabell Leosson",
+        "Sanna Asp",
+        "Tove Karlström"
+      ]
+    }
+  ],
+  "blog": [
+    {
+      "title": "blabla",
+      "date": "2022-05-10",
+      "content": "lång text yada yada"
+    }
+  ]
+}
