@@ -1,26 +1,33 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import Work from "./Work.js";
-import Home from "./Home.js";
-import About from "./About.js";
-import Blog from "./Blog";
+import WorkView from "./WorkView.js";
+import HomeView from "./HomeView.js";
+import AboutView from "./AboutView.js";
+import BlogView from "./BlogView";
 import Root from "./Root.js";
+import { SomeContext } from "./SomeContext";
+import { useContext } from "react";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 function App() {
+  const adminUser = useContext(SomeContext);
   const router = createHashRouter([
     {
       children: [
-        { element: <Home />, path: "/" },
-        { element: <About />, path: "/about" },
-        { element: <Work />, path: "/work/:projectId" },
-        { element: <Blog />, path: "/blog" },
+        { element: <HomeView />, path: "/" },
+        { element: <AboutView />, path: "/about" },
+        { element: <WorkView />, path: "/:projectId" },
+        { element: <BlogView />, path: "/blog" },
       ],
       element: <Root />,
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <SomeContext.Provider value={adminUser}>
+      <RouterProvider router={router} />
+    </SomeContext.Provider>
+  );
   // return (
   //   <div className="App">
   //     <header className="App-header">

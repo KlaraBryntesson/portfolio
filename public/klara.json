@@ -7,34 +7,39 @@
       "githubpages": "blablabla",
       "image": "URL"
     },
-    "description": "Lång text.. bla blabla"
+    "description": "Lång text.. bla blabla",
+    "important": "Information som aktuell just nu"
   },
   "work": [
     {
-      "id": "fomobor",
+      "id": "fomobar",
       "name": "Fomo Bar",
       "description": "blabla",
+      "image": "URL",
       "languages": ["HTML", "CSS"],
-      "participants": "nej"
+      "participants": ""
     },
     {
       "id": "beerlibrary",
       "name": "Beer Library",
       "description": "blabla",
+      "image": "URL",
       "languages": ["HTML", "CSS", "Native Javascript"],
-      "participants": []
+      "participants": ""
     },
     {
       "id": "gameofthrones",
       "name": "Game Of Thrones",
       "description": "blabla",
+      "image": "URL",
       "languages": ["HTML", "CSS", "Javascript", "Vue", "VITE"],
-      "participants": []
+      "participants": ""
     },
     {
       "id": "urbangreens",
       "name": "Urban Greens",
       "description": "blabla",
+      "image": "URL",
       "languages": ["HTML", "CSS", "Javascript", "Vue", "VITE"],
       "participants": [
         "Ellinor Sahberg",
@@ -46,9 +51,14 @@
   ],
   "blog": [
     {
-      "title": "blabla",
-      "date": "2022-05-10",
-      "content": "lång text yada yada"
+      "title": "Att lära sig grunderna i React",
+      "date": "2023-03-23",
+      "content": "Att lära sig React kan verka lite överväldigande i början, men det är faktiskt ganska lätt att komma igång om du har grundläggande förkunskaper i HTML, CSS och Javascript. Ett bra ställe att börja är att förstå att allt i React är en komponent. En komponent kan vara en knapp, en textruta, en bild eller till och med en hel sida. Genom att bryta ner en webbapplikation i små, återanvändbara komponenter kan du lättare hantera och uppdatera koden. Nästa steg är att lära sig JSX, vilket är en syntax för att skapa komponenter i React. Det kan verka konstigt i början att kombinera HTML och Javascript på det här sättet, men det gör det faktiskt enklare att skapa dynamiska användargränssnitt. En annan viktig del av React är props (egenskaper). Props är sättet att skicka data mellan komponenter. Till exempel kan du skicka en bildadress som en prop till en bildkomponent, eller textinnehåll till en textkomponent. Detta gör det möjligt för dig att skapa mer flexibla och återanvändbara komponenter. Efter att du har lärt dig dessa grundläggande koncept kan du börja arbeta med mer avancerade funktioner i React, såsom state (tillstånd) och livscykelmetoder. State gör det möjligt för dig att hantera och uppdatera data inom en komponent, medan livscykelmetoder låter dig köra kod vid olika tidpunkter i en komponents livscykel. Det finns en mängd resurser tillgängliga för att lära sig React, inklusive dokumentationen på Reacts hemsida och online-kurser på webbplatser som Udemy och Codecademy. Och om du behöver hjälp eller har frågor, finns det en livlig community av React-utvecklare där ute som är glada att hjälpa till. Så, sammanfattningsvis, att lära sig React är inte så svårt som det kan verka. Genom att förstå grundläggande koncept som komponenter, JSX och props, kan du snabbt börja bygga interaktiva och dynamiska användargränssnitt för webbapplikationer."
+    },
+    {
+      "title": "Vue.js och VITE",
+      "date": "2023-02-15",
+      "content": "Som frontendutvecklare är det viktigt att hålla sig uppdaterad med de senaste teknologierna och verktygen för att bygga moderna webbapplikationer. En av dessa teknologier är Vue.js, ett progressivt JavaScript-ramverk som används för att bygga användargränssnitt. Med Vue.js kan du skapa interaktiva och reaktiva användargränssnitt med hjälp av enkla och intuitiva komponenter. För att komma igång med Vue.js kan det vara bra att först lära sig grunderna i HTML, CSS och JavaScript. När du har en grundläggande förståelse för dessa teknologier kan du börja lära dig Vue.js. Ett bra sätt att lära sig Vue.js är att gå igenom dokumentationen på Vue.js webbplats. Där hittar du en komplett guide som täcker allt från grundläggande syntax till mer avancerade koncept som reaktivitet och livscykelmetoder. När du har en grundläggande förståelse för Vue.js kan du börja utforska dess ekosystem. Ett verktyg som kan underlätta din Vue.js-utveckling är VITE. VITE är ett snabbt och lättviktsverktyg som används för att bygga och utveckla Vue.js-applikationer. Med VITE kan du enkelt skapa en Vue.js-applikation med minimal konfiguration. Verktyget använder sig av den senaste versionen av JavaScript och innehåller inbyggd stöd för Vue.js, därför kan du enkelt importera Vue.js-komponenter och använda dem i din applikation. En annan fördel med VITE är dess snabbhet. Verktyget är optimerat för snabb utveckling och leverans av webbapplikationer. Detta innebär att du kan utveckla och testa dina applikationer mycket snabbare än med traditionella verktyg."
     }
   ]
 }
