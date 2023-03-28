@@ -1,3 +1,4 @@
+import React from "react";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -34,21 +35,29 @@ function Work() {
   //     console.log(project);
   //   }
   // }
-  return <p>{JSON.stringify(project)}</p>;
-  // return (
-  //   <div>
-  //     <h1>{project.name}</h1>
-  //     <p>{project.languages}</p>
-  //     <p>{project.description}</p>
-  //     {project.participants !== "" && (
-  //       <ul>
-  //         {project.participants.map((participant) => (
-  //           <span key={participant}>{participant}, </span>
-  //         ))}
-  //       </ul>
-  //     )}
-  //   </div>
-  // );
+  // return <p>{JSON.stringify(project)}</p>;
+  return (
+    <main>
+      {project !== null && (
+        <div>
+          <h1>{project.name}</h1>
+          <ul>
+            {project.languages.map((language) => (
+              <li key={language}>{language}</li>
+            ))}
+          </ul>
+          <p>{project.description}</p>
+          {project.participants !== "" && (
+            <ul>
+              {project.participants.map((participant) => (
+                <span key={participant}>{participant}, </span>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+    </main>
+  );
 }
 
 export default Work;

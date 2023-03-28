@@ -1,13 +1,194 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: NewYork;
+  src: url(../assets/FontsFree-Net-NewYork.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: rgb(242, 240, 233);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Montserrat, sans-serif;
+}
+
+main {
+  margin-left: 150px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+li {
+  list-style: none;
+}
+
+/* img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+} */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: NewYork, serif;
+  margin: 0;
+  /* text-transform: uppercase; */
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+ul {
+  padding: 0;
+}
+
+.bi {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  color: black;
+}
+
+header {
+  margin-left: 20px;
+}
+
+.NavBar-navbar {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.NavBar-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.NavBar-list {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: space-around;
+}
+
+.NavBar-navbar-left {
+  padding-left: 40px;
+  position: fixed;
+  height: 85vh;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavBar-icons {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 250px;
+}
+
+.NavBar-year {
+  justify-self: flex-end;
+}
+
+/* navbar för hamburgermeny */
+/* nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(242, 240, 233);
+} */
+
+/* .Home-skill-container {
+  padding: 10px;
+  background-color: orange;
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 3rem;
+} */
+
+.Home-skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  margin-right: 50px;
+}
+
+.Home-skill-primary {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(0);
+  animation: scroll-animation 20s linear infinite;
+}
+
+.Home-skill-secondary {
+  animation: secondary 20s linear infinite;
+  position: absolute;
+  top: 0%;
+  left: 200%;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(0);
+}
+
+@keyframes scroll-animation {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -490%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 490%;
+  }
+  to {
+    left: 0%;
+  }
 }
